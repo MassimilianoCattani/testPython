@@ -59,7 +59,7 @@ Pseudo code.
     
 """
 
-
+# Dictionary to hold the item key value pairs.
 item_arr = {
     "collar" : {
         "id" : 1, 
@@ -124,7 +124,6 @@ while flag == False:
         
         for ele in item_arr:
             if item_arr[ele]["id"] == user_item_sele:
-                # cart_item_id += 1
                 user_item = f". {item_arr[ele]['name'].ljust(20)}: £ {item_arr[ele]['price']}"
                 user_cart.append(user_item)
                 user_cart_names.append(item_arr[ele]["name"])     
