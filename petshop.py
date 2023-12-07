@@ -1,3 +1,65 @@
+# Shopping cart.
+
+# We have an item list from where the user can select a specific item.
+# We are going to build a program able to create user list, to sum up a total but, as well, able to subtract value from total and removing item from user list.
+
+"""
+Pseudo code.
+
+- Create a variable list of available items.
+- Declare variables:
+    - A user cart list just for display.
+    - A user cart name list to deal with names.
+    - A user cart price list to deal with prices.
+    - Initialise total var to 0.
+    - Initialize boolean flag and set to False.
+    
+- Display Shop name.
+- Display list of action (1: add item, 2: remove item, 3: check cart and total, 4: checkout).
+- User input action variable to select one of the displayed actions. 
+
+- Start loop. We can exit the loop only if boolean flag change to True. 
+
+    - if user input == 1:
+    
+        - Display list of available items with related ids.
+        - User input item selection via id( only 1 per time).
+        - Format user input item and append it to user cart list.
+        - Name and price get appended to the respective cart list at the same subscript.
+        - Update total.
+        
+        - Display list of action (1: add item, 2: remove item, 3: check cart and total, 4: checkout).
+        - User input action variable to select one of the displayed actions. 
+        
+    - Else if user input == 2
+    
+        - Display user cart list with re-assigned ids.
+        - Input user, item to remove.
+        - Update cart list.
+        - Update total.
+        
+        - Display list of action (1: add item, 2: remove item, 3: check cart and total, 4: checkout).
+        - User input action variable to select one of the displayed actions. 
+        
+    - Else if user input == 3:
+
+        - Display cart list and total.
+        
+        - Display list of action (1: add item, 2: remove item, 3: check cart and total, 4: checkout).
+        - User input action variable to select one of the displayed actions. 
+    
+    - Else if user input == 4:
+    
+        - Display "Checkout"
+        - Display cart list and total.
+        - flag = True
+        
+        
+        
+    
+"""
+
+
 item_arr = {
     "collar" : {
         "id" : 1, 
@@ -62,7 +124,7 @@ while flag == False:
         
         for ele in item_arr:
             if item_arr[ele]["id"] == user_item_sele:
-                cart_item_id += 1
+                # cart_item_id += 1
                 user_item = f". {item_arr[ele]['name'].ljust(20)}: £ {item_arr[ele]['price']}"
                 user_cart.append(user_item)
                 user_cart_names.append(item_arr[ele]["name"])     
