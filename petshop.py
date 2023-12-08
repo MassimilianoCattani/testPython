@@ -100,7 +100,6 @@ item_arr = {
 user_cart =[]
 user_cart_names = []
 user_cart_prices = []
-cart_item_id = 0
 total = 0
 
 print("-----------------------------------------------------------------------------------------")
